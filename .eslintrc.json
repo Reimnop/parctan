@@ -30,7 +30,7 @@
   "rules": {
     "comma-dangle": ["warn", "only-multiline"],
     "indent": ["warn", 2],
-    "quotes": ["warn", "double"],
+    "quotes": ["warn", "double", { "avoidEscape": true }],
     "semi": ["warn", "always"]
   }
 }
