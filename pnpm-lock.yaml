@@ -10,6 +10,9 @@ dependencies:
     version: 3.0.1
 
 devDependencies:
+  '@iconify-json/ri':
+    specifier: ^1.1.12
+    version: 1.1.12
   '@playwright/test':
     specifier: ^1.28.1
     version: 1.37.0
@@ -358,6 +361,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/ri@1.1.12:
+    resolution: {integrity: sha512-s5VsyMWYuUuTB5bATJRoDQKGqo6W0dsxvOBrJI/P2H9QI7IAaAWl8zHxseSjoUGG6AwZwWwDMW9YPULPt+vA6w==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:
