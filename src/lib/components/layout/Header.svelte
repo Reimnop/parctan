@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { enhance } from "$app/forms";
+  import { page } from "$app/stores";
+  import type { SubmitFunction } from "@sveltejs/kit";
   import RiContrastFill from "~icons/ri/contrast-fill";
   import RiMoonFill from "~icons/ri/moon-fill";
   import RiSunFill from "~icons/ri/sun-fill";
@@ -15,18 +18,28 @@
       icon: RiSunFill,
       className: "[[data-theme='light']_&]:bg-[hsl(var(--bc)_/_0.1)]",
       tip: "Light",
+      param: "light",
     },
     {
       icon: RiMoonFill,
       className: "[[data-theme='dark']_&]:bg-[hsl(var(--bc)_/_0.1)]",
       tip: "Dark",
+      param: "dark",
     },
     {
       icon: RiContrastFill,
       className: "[[data-theme='']_&]:bg-[hsl(var(--bc)_/_0.1)]",
       tip: "System",
+      param: "system",
     },
   ];
+
+  const submitTheme: SubmitFunction = ({ action }) => {
+    const theme = action.searchParams.get("theme");
+    if (theme) {
+      document.documentElement.setAttribute("data-theme", theme === "system" ? "" : theme);
+    }
+  };
 </script>
 
 <header class="mx-auto max-w-7xl p-4">
@@ -63,14 +76,21 @@
           <li>
             <details>
               <summary>Theme</summary>
-              <ul class="menu rounded-box menu-horizontal w-full space-x-1">
-                {#each themes as theme}
-                  <li>
-                    <a class="tooltip {theme.className}" data-tip={theme.tip} href="/">
-                      <svelte:component this={theme.icon} class="h-5 w-5" />
-                    </a>
-                  </li>
-                {/each}
+              <ul class="menu rounded-box menu-horizontal w-full">
+                <form class="flex gap-1" method="post" use:enhance={submitTheme}>
+                  {#each themes as theme}
+                    <li>
+                      <button
+                        class="tooltip {theme.className}"
+                        data-tip={theme.tip}
+                        type="submit"
+                        formaction="/?/setTheme&theme={theme.param}&redirectTo={$page.url.pathname}"
+                      >
+                        <svelte:component this={theme.icon} class="h-5 w-5" />
+                      </button>
+                    </li>
+                  {/each}
+                </form>
               </ul>
             </details>
           </li>
