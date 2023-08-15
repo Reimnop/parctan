@@ -42,7 +42,7 @@
   };
 </script>
 
-<header class="mx-auto max-w-7xl p-4">
+<header class="mx-auto max-w-7xl">
   <nav class="navbar">
     <div class="flex-1">
       <a class="btn btn-link m-0 p-0" href="/">
