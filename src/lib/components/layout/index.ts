@@ -1,3 +1,2 @@
 export { default as Footer } from "./Footer.svelte";
-export * from "./header";
-
+export { Logo, Header } from "./header";
