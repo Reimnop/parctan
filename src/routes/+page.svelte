@@ -1,6 +1,8 @@
 <script lang="ts">
   import GameAndEditor from "./GameAndEditor.svelte";
   import { Glow } from "$lib/components/elements";
+  import ToolsExample from "./ToolsExample.svelte";
+  import ModsExample from "./ModsExample.svelte";
 </script>
 
 <div class="hero mt-5 md:mt-10 [&_*]:min-w-0">
@@ -35,9 +37,9 @@
   </Glow> have?
 </h2>
 
-<section class="hero mt-5 rounded-lg bg-neutral/25 md:mt-10 md:px-12 [&_*]:min-w-0">
-  <div class="hero-content flex-col gap-8 p-8 md:flex-row lg:gap-x-16">
-    <GameAndEditor />
+<section class="hero mt-8 rounded-lg bg-neutral/25 md:mt-16 md:px-12 [&_*]:min-w-0">
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row lg:gap-x-16">
+    <ToolsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
         Level editing, <Glow class="text-primary" glowClass="blur-xl opacity-25">outmaxed</Glow>
@@ -46,14 +48,14 @@
         Explore the collection of powerful tools for the Project Arrhythmia’s Level Editor and use
         them to make various prefabs and text patterns.
       </p>
-      <a class="btn btn-primary mt-6" href="/">Browse Tools</a>
+      <a class="btn btn-primary mt-6 hover:drop-shadow-xl" href="/">Browse Tools</a>
     </div>
   </div>
 </section>
 
 <section class="hero mt-5 rounded-lg bg-neutral/25 md:mt-10 [&_*]:min-w-0">
-  <div class="hero-content flex-col gap-8 p-8 md:flex-row-reverse md:px-12 lg:gap-x-16">
-    <GameAndEditor />
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row-reverse md:px-12 lg:gap-x-16">
+    <ModsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
         Make your <Glow class="text-accent" glowClass="blur-xl opacity-25">own</Glow> PA

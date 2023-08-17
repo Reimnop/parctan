@@ -179,12 +179,30 @@
 
 <style lang="postcss">
   svg * {
-    animation: 1s cubic-bezier(0.85, 0, 0.15, 1) 0s infinite alternate both running;
+    @apply motion-safe:animate-[1s_cubic-bezier(0.85,_0,_0.15,_1)_0s_infinite_alternate_both_running];
   }
 
   #editor {
-    transform-origin: center;
     animation-name: editor;
+    @apply origin-center;
+  }
+
+  #game {
+    animation-name: game;
+    @apply origin-center;
+  }
+
+  #player {
+    animation-name: player;
+    @apply origin-center;
+  }
+
+  #head-top {
+    animation-name: head-top;
+  }
+
+  #head-blur {
+    animation-name: head-blur;
   }
 
   @keyframes editor {
@@ -192,47 +210,26 @@
       opacity: 50%;
     }
     100% {
-      transform: scale(1.05) rotate(2deg) translate(1em, -1.1em);
+      transform: scale(1.05) rotate(2deg) translate(1rem, -1.1rem);
     }
   }
-
-  #game {
-    transform-origin: center;
-    animation-name: game;
-  }
-
   @keyframes game {
     100% {
-      transform: scale(1.1) rotate(-3deg) translate(-0.3em, -1.2em);
+      transform: scale(1.1) rotate(-3deg) translate(-0.3rem, -1.2rem);
     }
   }
-
-  #player {
-    transform-origin: center;
-    animation-name: player;
-  }
-
   @keyframes player {
     0% {
       opacity: 75%;
     }
     100% {
-      transform: scale(1.1) rotate(-8deg) translate(-0.1em, -0.8em);
+      transform: scale(1.1) rotate(-8deg) translate(-0.1rem, -0.8rem);
     }
   }
-
-  #head-top {
-    animation-name: head-top;
-  }
-
   @keyframes head-top {
     100% {
       opacity: 0%;
     }
-  }
-
-  #head-blur {
-    animation-name: head-blur;
   }
 
   @keyframes head-blur {

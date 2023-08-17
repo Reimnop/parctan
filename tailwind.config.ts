@@ -14,7 +14,11 @@ const theme = {
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        flat: "2rem 2rem 0 rgba(0, 0, 0, 0.125)",
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
