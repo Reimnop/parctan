@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { GameAndEditor } from "$lib/components/images";
+  import GameAndEditor from "./GameAndEditor.svelte";
   import { Glow } from "$lib/components/elements";
 </script>
 

@@ -5,7 +5,7 @@
   import RiContrastFill from "~icons/ri/contrast-fill";
   import RiMoonFill from "~icons/ri/moon-fill";
   import RiSunFill from "~icons/ri/sun-fill";
-  import { Logo } from "../images";
+  import Logo from "./Logo.svelte";
 
   const links = [
     { title: "About", href: "/" },
