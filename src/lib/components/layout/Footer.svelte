@@ -19,7 +19,7 @@
   ];
 </script>
 
-<footer class="flex flex-col gap-y-2 pt-4 md:flex-row md:items-center md:justify-between">
+<footer class="flex flex-col gap-y-2 pt-4 mt-4 md:flex-row md:items-center md:justify-between">
   <div class="flex items-center gap-x-4">
     <img class="row-span-2 h-5 max-w-none" src="/assets/images/icon.svg" alt="Parctan icon" />
     <div class="divider divider-horizontal mx-0 hidden w-1 md:flex" />
