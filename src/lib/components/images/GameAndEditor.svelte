@@ -1,6 +1,6 @@
-<svg class="flex-1" viewBox="0 0 606 292" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g id="game_and_editor">
-    <g class="animate-root-1-editor origin-center">
+<svg class="flex-1" viewBox="0 0 606 293" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <g id="editor">
       <g clip-path="url(#clip0_105_15)">
         <rect
           width="414.813"
@@ -94,7 +94,6 @@
             fill="url(#paint0_linear_105_15)"
           />
           <rect
-            id="head-bottom"
             width="31.5"
             height="31.5"
             rx="7"
@@ -179,21 +178,38 @@
 </svg>
 
 <style lang="postcss">
-  /* // @mixin animation($id) {
-  //   ##{$id} {
-  //     transform-origin: center;
-  //     animation: 1s cubic-bezier(0.85, 0, 0.15, 1) 0s infinite alternate both running $id;
-  //   }
+  svg * {
+    animation: 1s cubic-bezier(0.85, 0, 0.15, 1) 0s infinite alternate both running;
+  }
 
-  //   @keyframes #{$id} {
-  //     @content;
-  //   }
-  // } */
+  #editor {
+    transform-origin: center;
+    animation-name: editor;
+  }
+
+  @keyframes editor {
+    0% {
+      opacity: 50%;
+    }
+    100% {
+      transform: scale(1.05) rotate(2deg) translate(1em, -1.1em);
+    }
+  }
+
+  #game {
+    transform-origin: center;
+    animation-name: game;
+  }
 
   @keyframes game {
     100% {
       transform: scale(1.1) rotate(-3deg) translate(-0.3em, -1.2em);
     }
+  }
+
+  #player {
+    transform-origin: center;
+    animation-name: player;
   }
 
   @keyframes player {
@@ -205,10 +221,18 @@
     }
   }
 
+  #head-top {
+    animation-name: head-top;
+  }
+
   @keyframes head-top {
     100% {
       opacity: 0%;
     }
+  }
+
+  #head-blur {
+    animation-name: head-blur;
   }
 
   @keyframes head-blur {
@@ -216,17 +240,7 @@
       opacity: 0%;
     }
     100% {
-      opacity: 100%;
       filter: blur(1rem) contrast(1.5);
-    }
-  }
-
-  @keyframes editor {
-    0% {
-      opacity: 50%;
-    }
-    100% {
-      transform: scale(1.05) rotate(2deg) translate(1em, -1.1em);
     }
   }
 </style>
