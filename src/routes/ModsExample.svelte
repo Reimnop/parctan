@@ -1,4 +1,26 @@
-<svg class="flex-1" viewBox="0 0 578 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="relative">
+  <div class="relative origin-center -rotate-[3deg] scale-[80%] drop-shadow-xl" id="editor">
+    <img width="415" height="207" src="/assets/images/root/editor.svg" alt="Editor window" />
+    <img
+      class="absolute left-0 top-0 h-full w-full scale-95 opacity-0"
+      id="mods-blur"
+      width="415"
+      height="207"
+      src="/assets/images/root/mods.svg"
+      alt="Mods"
+    />
+    <img
+      class="absolute left-0 top-0 h-full w-full scale-95 opacity-0"
+      id="mods"
+      width="415"
+      height="207"
+      src="/assets/images/root/mods.svg"
+      alt="Mods"
+    />
+  </div>
+</div>
+
+<!-- <svg class="flex-1" viewBox="0 0 578 288" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="tools-example">
     <g id="editor">
       <g clip-path="url(#clip0_116_15)">
@@ -222,5 +244,23 @@
     #mods {
       @apply scale-100 opacity-100;
     }
+  }
+</style> -->
+
+<style lang="postcss">
+  * {
+    @apply duration-200 ease-[cubic-bezier(0,0.55,0.45,1)];
+  }
+
+  :global(.group):hover #editor {
+    @apply rotate-[1deg] scale-[92%];
+  }
+
+  :global(.group):hover #mods {
+    @apply scale-100 opacity-100;
+  }
+
+  :global(.group):hover #mods-blur {
+    @apply scale-100 opacity-25 blur-xl;
   }
 </style>

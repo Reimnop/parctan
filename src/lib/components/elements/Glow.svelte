@@ -6,7 +6,7 @@
 
 <span class="relative {className}">
   <slot />
-  <span class="absolute left-0 h-full w-full {className} {glowClass}">
+  <span class="absolute left-0 h-full w-full {className} {glowClass}" aria-hidden="true">
     <slot />
   </span>
 </span>

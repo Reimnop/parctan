@@ -1,8 +1,8 @@
 <script lang="ts">
-  import GameAndEditor from "./GameAndEditor.svelte";
   import { Glow } from "$lib/components/elements";
-  import ToolsExample from "./ToolsExample.svelte";
+  import GameAndEditor from "./GameAndEditor.svelte";
   import ModsExample from "./ModsExample.svelte";
+  import ToolsExample from "./ToolsExample.svelte";
 </script>
 
 <div class="hero mt-5 md:mt-10 [&_*]:min-w-0">
@@ -38,7 +38,7 @@
 </h2>
 
 <section class="hero mt-8 rounded-lg bg-neutral/25 md:mt-16 md:px-12 [&_*]:min-w-0">
-  <div class="group hero-content flex-col gap-8 p-8 md:flex-row lg:gap-x-16">
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row md:p-12 lg:gap-x-16">
     <ToolsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
@@ -54,7 +54,7 @@
 </section>
 
 <section class="hero mt-5 rounded-lg bg-neutral/25 md:mt-10 [&_*]:min-w-0">
-  <div class="group hero-content flex-col gap-8 p-8 md:flex-row-reverse md:px-12 lg:gap-x-16">
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row-reverse md:p-12 lg:gap-x-16">
     <ModsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
