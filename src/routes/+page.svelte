@@ -11,7 +11,7 @@
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
         The <Glow
-          class="animate-pulse bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
+          class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
           glowClass="blur-2xl opacity-50"
         >
           advanced
@@ -30,7 +30,7 @@
 
 <h2 class="mt-10 text-center text-3xl font-bold md:mt-20 md:text-4xl">
   What does <Glow
-    class="animate-pulse bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
+    class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
     glowClass="blur-xl opacity-50"
   >
     Parctan
