@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { Footer, Header } from "$lib/components/layout";
+  import montserrat from "$assets/fonts/Montserrat-VariableFont_wght.ttf";
+  import { Footer, Header } from "$components/layout";
   import "../app.css";
-  import montserrat from "$lib/assets/fonts/Montserrat-VariableFont_wght.ttf";
 </script>
 
 <svelte:head>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import editor from "$lib/assets/images/root/editor.svg";
-  import game from "$lib/assets/images/root/game.svg";
-  import player from "$lib/assets/images/root/player.svg";
+  import editor from "$assets/images/root/editor.svg";
+  import game from "$assets/images/root/game.svg";
+  import player from "$assets/images/root/player.svg";
 </script>
 
 <div class="relative">

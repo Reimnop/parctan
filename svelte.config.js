@@ -11,6 +11,12 @@ const config = {
     adapter: adapter({
       precompress: true,
     }),
+    alias: {
+      $components: "src/lib/components",
+      "$components/*": "src/lib/components/*",
+      $assets: "src/lib/assets",
+      "$assets/*": "src/lib/assets/*",
+    },
   },
 };
 

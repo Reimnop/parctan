@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Glow } from "$lib/components/elements";
+  import { Glow } from "$components/elements";
   import GameAndEditor from "./GameAndEditor.svelte";
   import ModsExample from "./ModsExample.svelte";
   import ToolsExample from "./ToolsExample.svelte";

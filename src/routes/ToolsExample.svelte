@@ -1,6 +1,6 @@
 <script lang="ts">
-  import editor from "$lib/assets/images/root/editor.svg";
-  import picture from "$lib/assets/images/root/picture.svg";
+  import editor from "$assets/images/root/editor.svg";
+  import picture from "$assets/images/root/picture.svg";
 </script>
 
 <div class="relative">

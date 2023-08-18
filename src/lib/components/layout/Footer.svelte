@@ -1,8 +1,8 @@
 <script lang="ts">
+  import icon from "$assets/images/icon.svg";
   import RiDiscordFill from "~icons/ri/discord-fill";
   import RiGitHubFill from "~icons/ri/github-fill";
   import RiYouTubeFill from "~icons/ri/youtube-fill";
-  import icon from "$lib/assets/images/icon.svg";
 
   const links = [
     {
