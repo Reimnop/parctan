@@ -47,7 +47,13 @@
     <div class="flex-1">
       <a class="btn btn-link m-0 p-0" href="/">
         <Logo />
-        <img class="h-8 md:hidden" src="/assets/images/icon.svg" alt="Parctan" />
+        <img
+          width="96"
+          height="58"
+          class="h-8 md:hidden"
+          src="/assets/images/icon.svg"
+          alt="Parctan"
+        />
       </a>
     </div>
     <div class="flex-none space-x-4">
