@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  prettier:
-    specifier: ^3.0.1
-    version: 3.0.1
-
 devDependencies:
   '@iconify-json/ri':
     specifier: ^1.1.12
@@ -46,6 +41,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.27
     version: 8.4.27
+  prettier:
+    specifier: ^3.0.1
+    version: 3.0.1
   prettier-plugin-svelte:
     specifier: ^3.0.3
     version: 3.0.3(prettier@3.0.1)(svelte@4.2.0)
@@ -2226,6 +2224,7 @@ packages:
     resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: true
 
   /pretty-format@29.6.2:
     resolution: {integrity: sha512-1q0oC8eRveTg5nnBEWMXAU2qpv65Gnuf2eCQzSjxpWFkPaPARwqZZDGuNE0zPAZfTCHzIk3A8dIjwlQKKLphyg==}
