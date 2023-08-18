@@ -1,23 +1,29 @@
+<script lang="ts">
+  import editor from "$lib/assets/images/root/editor.svg";
+  import game from "$lib/assets/images/root/game.svg";
+  import player from "$lib/assets/images/root/player.svg";
+</script>
+
 <div class="relative">
   <img
     class="relative origin-center translate-x-[7%] translate-y-[8%] rotate-[2deg] scale-[72%] opacity-80 drop-shadow-xl"
     id="editor"
     width="415"
     height="207"
-    src="/assets/images/root/editor.svg"
+    src={editor}
     alt="Editor window"
   />
   <div
     class="absolute left-0 top-0 h-full w-full origin-center -translate-x-[4%] translate-y-[5%] -rotate-[3deg] scale-[72%] drop-shadow-xl"
     id="game"
   >
-    <img width="415" height="207" src="/assets/images/root/game.svg" alt="Game window" />
+    <img width="415" height="207" src={game} alt="Game window" />
     <img
       class="absolute left-0 top-0 h-full w-full origin-center scale-50"
       id="player-blur"
       width="32"
       height="96"
-      src="/assets/images/root/player.svg"
+      src={player}
       alt="Player"
     />
     <img
@@ -25,7 +31,7 @@
       id="player"
       width="32"
       height="96"
-      src="/assets/images/root/player.svg"
+      src={player}
       alt="Player"
     />
   </div>

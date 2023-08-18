@@ -1,10 +1,15 @@
+<script lang="ts">
+  import editor from "$lib/assets/images/root/editor.svg";
+  import picture from "$lib/assets/images/root/picture.svg";
+</script>
+
 <div class="relative">
   <img
     class="relative origin-center translate-x-[7%] translate-y-[8%] rotate-[2deg] scale-[72%] drop-shadow-xl"
     id="editor"
     width="415"
     height="207"
-    src="/assets/images/root/editor.svg"
+    src={editor}
     alt="Editor window"
   />
   <div
@@ -12,13 +17,7 @@
     id="frame"
   >
     <div class="h-full w-full rounded-[8%] bg-neutral-900 p-[15%]">
-      <img
-        class="h-full w-full"
-        width="80"
-        height="72"
-        src="/assets/images/root/picture.svg"
-        alt="Hill and sun"
-      />
+      <img class="h-full w-full" width="80" height="72" src={picture} alt="Hill and sun" />
     </div>
   </div>
 </div>
