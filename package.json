@@ -12,7 +12,8 @@
     "lint": "prettier --check --plugin prettier-plugin-svelte . && eslint .",
     "format": "prettier --write --plugin prettier-plugin-svelte .",
     "test:integration": "playwright test",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "debug": "vavite-loader vite dev"
   },
   "devDependencies": {
     "@iconify-json/ri": "^1.1.12",
