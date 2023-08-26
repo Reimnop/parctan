@@ -7,35 +7,44 @@
   const links = [
     {
       icon: RiDiscordFill,
+      title: "Discord",
       href: "/",
     },
     {
       icon: RiGitHubFill,
+      title: "GitHub",
       href: "/",
     },
     {
       icon: RiYouTubeFill,
+      title: "YouTube",
       href: "/",
     },
   ];
 </script>
 
-<footer class="mt-4 flex flex-col gap-y-2 pt-4 md:flex-row md:items-center md:justify-between">
+<footer class="mt-4 flex gap-y-2 pt-4 flex-row items-center justify-between flex-wrap gap-x-8">
   <div class="flex items-center gap-x-4">
-    <img class="row-span-2 h-5 max-w-none" width="96" height="58" src={icon} alt="Parctan icon" />
-    <div class="divider divider-horizontal mx-0 hidden w-1 md:flex" />
-    <div class="md:flex">
+    <img class="row-span-2 h-5 max-w-none w-8" width="96" height="58" src={icon} alt="Parctan icon" />
+    <div class="divider divider-horizontal mx-0 hidden w-1 sm:flex" />
+    <div class="sm:flex">
       <div>
-        made by <a class="link-hover font-semibold" href="/">enchart</a>
+        made by <a class="link-hover font-semibold" href="/">Parctan Team</a>
       </div>
       <div class="divider divider-horizontal mx-2" />
-      <a class="link-hover" href="/">MIT License</a>
+      <a class="link-hover" href="/">License</a>
     </div>
   </div>
   <div class="flex gap-x-4">
-    {#each links as link}
-      <a class="btn btn-circle btn-link btn-sm text-neutral-content" href={link.href}>
-        <svelte:component this={link.icon} class="h-6 w-6 md:h-7 md:w-7" />
+    {#each links as { icon, title, href }}
+      <a class="btn btn-circle btn-link btn-sm text-neutral-content" {href} {title}>
+        <svelte:component
+          this={icon}
+          class="h-6 w-6 md:h-7 md:w-7"
+          aria-hidden="true"
+          focusable="false"
+        />
+        <span class="visually-hidden">{title}</span>
       </a>
     {/each}
   </div>
