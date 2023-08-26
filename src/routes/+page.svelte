@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Glow } from "$components/elements";
   import GameAndEditor from "./GameAndEditor.svelte";
   import ModsExample from "./ModsExample.svelte";
   import ToolsExample from "./ToolsExample.svelte";
@@ -10,12 +9,11 @@
     <GameAndEditor />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
-        <Glow
+        <span
           class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
-          glowClass="blur-2xl opacity-50"
         >
           Everything
-        </Glow>
+        </span>
         for Project Arrhythmia
       </h1>
       <p class="mt-4 text-lg font-medium">
@@ -28,12 +26,12 @@
 </div>
 
 <h2 class="mt-10 text-center text-3xl font-bold md:mt-20 md:text-4xl">
-  What does <Glow
+  What does <span
     class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
-    glowClass="blur-xl opacity-50"
   >
     Parctan
-  </Glow> have?
+  </span>
+   have?
 </h2>
 
 <section class="hero mt-8 rounded-lg bg-neutral/25 md:mt-16 md:px-12 [&_*]:min-w-0">
@@ -41,7 +39,7 @@
     <ToolsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
-        Level editing, <Glow class="text-primary" glowClass="blur-xl opacity-25">outmaxed</Glow>
+        Level editing, <span class="text-primary">outmaxed</span>
       </h1>
       <p class="mt-4 text-lg font-medium">
         Explore the collection of powerful tools for the Project Arrhythmia’s Level Editor and use
@@ -57,7 +55,8 @@
     <ModsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
-        Make your <Glow class="text-accent" glowClass="blur-xl opacity-25">own</Glow> PA
+        Make your <span class="text-accent">own</span>
+         PA
       </h1>
       <p class="mt-4 text-lg font-medium">
         PA mods offer countless tweaks and features for the game. We put them all in a single place
