@@ -23,9 +23,15 @@
   ];
 </script>
 
-<footer class="mt-4 flex gap-y-2 pt-4 flex-row items-center justify-between flex-wrap gap-x-8">
+<footer class="mt-4 flex flex-row flex-wrap items-center justify-between gap-x-8 gap-y-2 pt-4">
   <div class="flex items-center gap-x-4">
-    <img class="row-span-2 h-5 max-w-none w-8" width="96" height="58" src={icon} alt="Parctan icon" />
+    <img
+      class="row-span-2 h-5 w-8 max-w-none"
+      width="96"
+      height="58"
+      src={icon}
+      alt="Parctan icon"
+    />
     <div class="divider divider-horizontal mx-0 hidden w-1 sm:flex" />
     <div class="sm:flex">
       <div>
