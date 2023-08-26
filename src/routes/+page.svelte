@@ -25,17 +25,8 @@
   </div>
 </div>
 
-<h2 class="mt-10 text-center text-3xl font-bold md:mt-20 md:text-4xl">
-  What does <span
-    class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
-  >
-    Parctan
-  </span>
-   have?
-</h2>
-
-<section class="hero mt-8 rounded-lg bg-neutral/25 md:mt-16 md:px-12 [&_*]:min-w-0">
-  <div class="group hero-content flex-col gap-8 p-8 md:flex-row md:p-12 lg:gap-x-16">
+<section class="hero mt-5 rounded-lg bg-neutral/25 md:mt-16 [&_*]:min-w-0">
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row md:py-12 lg:gap-x-16 lg:mx-8">
     <ToolsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
@@ -51,7 +42,7 @@
 </section>
 
 <section class="hero mt-5 rounded-lg bg-neutral/25 md:mt-10 [&_*]:min-w-0">
-  <div class="group hero-content flex-col gap-8 p-8 md:flex-row-reverse md:p-12 lg:gap-x-16">
+  <div class="group hero-content flex-col gap-8 p-8 md:flex-row-reverse md:py-12 lg:gap-x-16 lg:mx-8">
     <ModsExample />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">

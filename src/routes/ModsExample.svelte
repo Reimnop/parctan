@@ -3,7 +3,7 @@
   import mods from "$assets/images/root/mods.svg";
 </script>
 
-<div class="relative">
+<div class="relative md:flex-1 lg:flex-none">
   <div class="relative origin-center -rotate-[3deg] scale-[80%] drop-shadow-xl" id="editor">
     <img width="415" height="207" src={editor} alt="Editor window" />
     <img

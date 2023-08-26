@@ -4,7 +4,7 @@
   import player from "$assets/images/root/player.svg";
 </script>
 
-<div class="relative">
+<div class="relative md:flex-1 lg:flex-none">
   <img
     class="relative origin-center translate-x-[7%] translate-y-[8%] rotate-[2deg] scale-[72%] opacity-80 drop-shadow-xl"
     id="editor"
