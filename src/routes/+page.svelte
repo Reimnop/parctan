@@ -10,14 +10,13 @@
     <GameAndEditor />
     <div class="flex-1">
       <h1 class="text-3xl font-bold md:text-4xl">
-        The <Glow
+        <Glow
           class="bg-gradient-to-r from-primary to-accent box-decoration-clone bg-clip-text text-transparent"
           glowClass="blur-2xl opacity-50"
         >
-          advanced
+          Everything
         </Glow>
-        <br />
-        Project Arrhythmia experience
+        for Project Arrhythmia
       </h1>
       <p class="mt-4 text-lg font-medium">
         <b>Parctan</b>
