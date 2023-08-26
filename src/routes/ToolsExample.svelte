@@ -1,6 +1,6 @@
 <script lang="ts">
-  import editor from "$assets/images/root/editor.svg";
-  import picture from "$assets/images/root/picture.svg";
+  import editor from "$assets/images/home/editor.svg";
+  import picture from "$assets/images/home/picture.svg";
 </script>
 
 <div class="relative md:flex-1 lg:flex-none">
