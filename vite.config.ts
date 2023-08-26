@@ -1,9 +1,11 @@
 import { sveltekit } from "@sveltejs/kit/vite";
-import { defineConfig } from "vitest/config";
+import { nodeLoaderPlugin } from "@vavite/node-loader/plugin";
 import Icons from "unplugin-icons/vite";
+import { defineConfig } from "vitest/config";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [
+    ...(mode === "development" ? [nodeLoaderPlugin()] : []),
     sveltekit(),
     Icons({
       compiler: "svelte",
@@ -12,4 +14,4 @@ export default defineConfig({
   test: {
     include: ["src/**/*.{test,spec}.{js,ts}"],
   },
-});
+}));
