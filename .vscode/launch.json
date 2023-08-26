@@ -8,18 +8,9 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run-script", "debug"],
       "skipFiles": ["<node_internals>/**"],
-      "cwd": "${workspaceFolder}/src"
+      // "cwd": "${workspaceFolder}/src",
+      // "trace": true,
+      // "sourceMaps": true
     },
-    {
-      "name": "Launch via NPM : Server Code",
-      "type": "node",
-      "request": "launch",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "debug", "--host", "--port", "5173"],
-      "skipFiles": ["<node_internals>/**"],
-      "cwd": "${workspaceFolder}/src",
-      "trace": true,
-      "sourceMaps": true
-    }
   ]
 }
