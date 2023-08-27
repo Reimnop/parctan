@@ -13,7 +13,7 @@
     "format": "prettier --write --plugin prettier-plugin-svelte .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "debug": "vavite-loader vite dev"
+    "debug": "vavite-loader vite dev --open"
   },
   "devDependencies": {
     "@iconify-json/ri": "^1.1.12",
